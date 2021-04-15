@@ -5,7 +5,6 @@ import java.util.List;
  
 import javax.xml.bind.annotation.XmlRootElement;
  
-@XmlRootElement (name="employees")
 public class EmployeeListVO
 {
     private List<EmployeeVO> employees = new ArrayList<EmployeeVO>();
