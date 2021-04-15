@@ -8,22 +8,17 @@ import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
  
-@XmlRootElement (name = "employee")
-@XmlAccessorType(XmlAccessType.NONE)
+
 public class EmployeeVO implements Serializable
 {
     private static final long serialVersionUID = 1L;
  
-    @XmlAttribute
     private Integer id;
      
-    @XmlElement
     private String firstName;
      
-    @XmlElement
     private String lastName;
      
-    @XmlElement
     private String email;
      
     public EmployeeVO(Integer id, String firstName, String lastName, String email) {
